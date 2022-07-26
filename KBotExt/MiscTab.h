@@ -89,7 +89,7 @@ public:
 					result = "Invadlid path, change it in Settings tab";
 				}
 				else
-					ShellExecuteA(NULL, NULL, std::format("{}LeagueClient.exe", S.leaguePath).c_str(), "--allow-multiple-clients", NULL, SW_SHOWNORMAL);
+					ShellExecuteA(NULL, NULL, std::format("{}LeagueClient.exe", S.leaguePath).c_str(), "--client-config-url=\"http://127.0.0.1:7000\", "--allow-multiple-clients", NULL, SW_SHOWNORMAL);
 			}
 
 			if (ImGui::Button("Restart UX"))
